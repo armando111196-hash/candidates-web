@@ -1,0 +1,106 @@
+.candidate-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.candidate-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.candidate-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.candidate-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text-main);
+}
+
+.candidate-card-city {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background-color: var(--bg-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.candidate-card-email {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.candidate-card-experience {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.candidate-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  min-height: 2rem;
+}
+
+.candidate-skill-tag {
+  background-color: #eff6ff;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.candidate-no-skills {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.candidate-card-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+}
+
+.candidate-favorite-btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.candidate-favorite-btn:hover {
+  background-color: var(--bg-color);
+}
+
+.candidate-favorite-btn.is-favorite {
+  background-color: var(--favorite-color);
+  border-color: var(--favorite-color);
+  color: white;
+}
+
+.candidate-favorite-btn.is-favorite:hover {
+  background-color: var(--favorite-hover);
+  border-color: var(--favorite-hover);
+}

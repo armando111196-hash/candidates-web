@@ -1,0 +1,19 @@
+.header-container {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.header-subtitle {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}

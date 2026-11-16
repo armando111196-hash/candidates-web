@@ -1,0 +1,14 @@
+.candidate-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Adaptación para pantallas de unos 375px */
+@media (max-width: 375px) {
+  .candidate-list-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
